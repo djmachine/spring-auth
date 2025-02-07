@@ -46,7 +46,7 @@ public class JwtUtil {
     // 토큰 생성
     public String createToken(String username, UserRoleEnum role) {
         Date date = new Date();
-
+        System.out.println("들어왔습니다") ;
         return BEARER_PREFIX +
                 Jwts.builder()
                         .setSubject(username) // 사용자 식별자값(ID)
