@@ -108,5 +108,6 @@ public class AuthController {
         System.out.println("authority = " + authority);
 
         return "getJwt : " + username + ", " + authority;
+
     }
 }
